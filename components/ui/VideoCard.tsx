@@ -198,8 +198,9 @@ export function VideoCard({
         >
           <video
             ref={videoRef}
-            src={src}
+            src={`${src}#t=0.001`}
             preload="metadata"
+            playsInline
             className="block w-full"
             style={{ maxHeight: 220, objectFit: "cover", display: "block" }}
           />
