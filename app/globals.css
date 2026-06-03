@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-cream: #f7f5f2;
+  --color-paper: #f7f5f2;
+  --color-ink: #1c1c2e;
+  --color-mango: #f4a261;
+  --color-chili: #e63946;
+  --color-honey: #ffd166;
+  --color-sky: #118ab2;
+  --color-sage: #2a9d8f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f7f5f2;
+  background-image: radial-gradient(circle, rgba(28, 28, 46, 0.2) 1.5px, transparent 1.5px);
+  background-size: 22px 22px;
+  color: #1c1c2e;
+  font-family: var(--font-caveat), cursive;
+  overflow-x: hidden;
+}
+
+.font-hand {
+  font-family: var(--font-caveat), cursive;
+}
+
+/* Polaroid card */
+.polaroid {
+  background: white;
+  padding: 10px 10px 44px 10px;
+  box-shadow: 2px 4px 0 rgba(28, 28, 46, 0.08), 4px 8px 20px rgba(28, 28, 46, 0.12);
+}
+
+/* Tape strip */
+.tape {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 209, 102, 0.75) 0%,
+    rgba(255, 209, 102, 0.55) 100%
+  );
+}
+
+/* Highlight underline (yellow marker) */
+.highlight {
+  background: linear-gradient(
+    180deg,
+    transparent 55%,
+    rgba(255, 209, 102, 0.65) 55%
+  );
+  display: inline;
+}
+
+/* Section wavy top border via clip-path */
+.wavy-top {
+  clip-path: ellipse(55% 100% at 50% 100%);
+}
+
+/* VHS card dark bg */
+.vhs-card {
+  background: #1c1c2e;
+  position: relative;
+}
+.vhs-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, #f4a261, #e63946, #ffd166, #f4a261);
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+}
+@keyframes shimmer {
+  0% { background-position: 0% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Spider-Man crawler Easter egg */
+@keyframes crawl {
+  0%   { transform: translateX(-80px) rotate(-20deg); opacity: 0; }
+  10%  { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { transform: translateX(calc(100vw + 80px)) rotate(20deg); opacity: 0; }
+}
+.spidey {
+  animation: crawl 8s ease-in-out forwards;
+}
+
+/* CLASSIFIED hover reveal */
+.classified-wrap {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.classified-wrap .cover {
+  position: absolute;
+  inset: -2px;
+  background: #1c1c2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.25s;
+  border-radius: 2px;
+}
+.classified-wrap:hover .cover {
+  opacity: 0;
+}
