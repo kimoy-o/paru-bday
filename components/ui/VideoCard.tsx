@@ -118,7 +118,7 @@ export function VideoCard({
           io.disconnect();
         }
       },
-      { rootMargin: "0px 0px 200% 0px" }
+      { rootMargin: "0px 0px 100% 0px" }
     );
     io.observe(wrap);
     return () => io.disconnect();
@@ -199,7 +199,7 @@ export function VideoCard({
           <video
             ref={videoRef}
             src={`${src}#t=0.001`}
-            preload="metadata"
+            preload="none"
             playsInline
             className="block w-full"
             style={{ maxHeight: 220, objectFit: "cover", display: "block" }}
