@@ -19,14 +19,14 @@ const TAPE_COLORS = [
   "rgba(255,188,160,0.72)", // peach
 ];
 
-// Hand-placed hero slots — spread top / mid / bottom on both sides
+// Hand-placed hero slots — wide vertical spread so tall portrait stickers don't overlap
 const HERO_SLOTS = [
-  { side: "left"  as const, topFrac: 0.07, edgeX: 14, rot: -14, wMult: 1.10 },
-  { side: "right" as const, topFrac: 0.11, edgeX: 10, rot:  11, wMult: 0.90 },
-  { side: "left"  as const, topFrac: 0.38, edgeX:  9, rot:   8, wMult: 1.00 },
-  { side: "right" as const, topFrac: 0.45, edgeX: 12, rot: -12, wMult: 1.05 },
-  { side: "left"  as const, topFrac: 0.73, edgeX: 11, rot:  -8, wMult: 0.95 },
-  { side: "right" as const, topFrac: 0.77, edgeX: 13, rot:  13, wMult: 1.10 },
+  { side: "left"  as const, topFrac: 0.05, edgeX: 14, rot: -14, wMult: 1.10 },
+  { side: "right" as const, topFrac: 0.10, edgeX: 10, rot:  11, wMult: 0.90 },
+  { side: "left"  as const, topFrac: 0.52, edgeX:  9, rot:   8, wMult: 1.00 },
+  { side: "right" as const, topFrac: 0.50, edgeX: 12, rot: -12, wMult: 1.05 },
+  { side: "left"  as const, topFrac: 0.82, edgeX: 11, rot:  -8, wMult: 0.95 },
+  { side: "right" as const, topFrac: 0.80, edgeX: 13, rot:  13, wMult: 1.10 },
 ];
 
 // Sub-slot patterns for remaining sections — 4-slot and 3-slot, alternating
@@ -132,9 +132,8 @@ export function StickerLayer() {
             top: s.top,
             [s.side]: s.edgeX,
             zIndex: 40,
-            width: s.width,
-            transform: `rotate(${s.rotation}deg)`,
-            transformOrigin: "center top",
+            transform: `scale(${s.file === "income-tax.jpeg" ? 0.6 : 0.75}) rotate(${s.rotation}deg)`,
+            transformOrigin: `top ${s.side}`,
           }}
         >
           {/* tape */}
@@ -155,7 +154,7 @@ export function StickerLayer() {
             src={`/resources/photos/stickers/${encodeURIComponent(s.file)}`}
             alt=""
             draggable={false}
-            style={{ width: "100%", height: "auto", display: "block" }}
+            style={{ display: "block" }}
           />
         </div>
       ))}
