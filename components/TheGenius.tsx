@@ -46,7 +46,7 @@ export function TheGenius() {
           <div className="flex items-start gap-4">
             <div>
               <p className="font-hand text-mango text-xl tracking-[0.3em] mb-1">
-                act i
+                act ii
               </p>
               <h2 className="font-hand font-bold text-ink leading-none"
                 style={{ fontSize: "clamp(3rem, 8vw, 6rem)" }}>

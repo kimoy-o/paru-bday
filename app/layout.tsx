@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Caveat } from "next/font/google";
+import { Caveat, Chilanka } from "next/font/google";
 import "./globals.css";
 
 const caveat = Caveat({
   subsets: ["latin"],
   variable: "--font-caveat",
   weight: ["400", "500", "600", "700"],
+});
+
+const chilanka = Chilanka({
+  subsets: ["malayalam"],
+  variable: "--font-chilanka",
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -19,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={caveat.variable}>
+    <html lang="en" className={`${caveat.variable} ${chilanka.variable}`}>
       <body className="bg-cream text-ink font-hand antialiased">{children}</body>
     </html>
   );

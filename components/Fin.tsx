@@ -67,7 +67,7 @@ export function Fin() {
                 {/* User will fill this in — placeholder below */}
                 <span className="text-ink/50 italic text-xl">
                   happiest bday to you my dear paru chechiiiii, <br/>
-                  some wise person once told me the best place one could be in is in that person's prayers, what im saying is even though i dont believe as much, you will always be in my thoughts and prayers, i really wish you get everything and more that your heart wishes for, you truly deserve it. <br/>
+                  some wise person once told me the best place one could be in is in someone's prayers, what im saying is, you will always be in my thoughts and prayers, i really wish you get everything and more that your little heart wishes for, you truly deserve it. &lt;3<br/>
                   happy birthday again, love you gang.
                 </span>
               </p>

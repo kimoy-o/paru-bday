@@ -20,12 +20,12 @@ body {
   background-image: radial-gradient(circle, rgba(28, 28, 46, 0.2) 1.5px, transparent 1.5px);
   background-size: 22px 22px;
   color: #1c1c2e;
-  font-family: var(--font-caveat), cursive;
+  font-family: var(--font-caveat), var(--font-chilanka), cursive;
   overflow-x: hidden;
 }
 
 .font-hand {
-  font-family: var(--font-caveat), cursive;
+  font-family: var(--font-caveat), var(--font-chilanka), cursive;
 }
 
 /* Polaroid card */

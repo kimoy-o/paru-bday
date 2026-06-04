@@ -37,9 +37,9 @@ const accents = ["#ffd166", "#f4a261", "#e63946", "#ffd166", "#f4a261"];
 export function NoParking() {
   return (
     <section className="py-24 px-6 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-cream/60 to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-cream/60 to-transparent pointer-events-none" style={{ zIndex: -1 }} />
 
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-5xl mx-auto relative z-10">
         {/* Section title — very formal museum energy */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -48,7 +48,7 @@ export function NoParking() {
           transition={{ duration: 0.6 }}
           className="mb-4 text-center"
         >
-          <p className="font-hand text-ink/55 tracking-[0.4em] text-lg mb-2 uppercase">
+          <p className="font-hand text-ink/75 tracking-[0.4em] text-lg mb-2 uppercase">
             a retrospective
           </p>
           <h2
@@ -60,11 +60,11 @@ export function NoParking() {
           <div className="flex justify-center mt-1">
             <DoodleUnderline className="text-chili w-72" />
           </div>
-          <p className="font-hand text-ink/62 text-xl mt-4 max-w-lg mx-auto leading-snug">
+          <p className="font-hand text-ink/80 text-xl mt-4 max-w-lg mx-auto leading-snug">
             a five-part documentation of paru&apos;s continued, unresolved
             relationship with a no parking sign.
           </p>
-          <p className="font-hand text-ink/50 text-lg mt-2">
+          <p className="font-hand text-ink/70 text-lg mt-2">
             curator&apos;s note: the sign did not consent to any of this.
           </p>
         </motion.div>
@@ -103,7 +103,7 @@ export function NoParking() {
                 imgHeight={210}
                 width={210}
               />
-              <p className="font-hand text-sm text-ink/55 tracking-widest mt-1">
+              <p className="font-hand text-sm text-ink/75 tracking-widest mt-1">
                 EXHIBIT 1.{i + 1}
               </p>
             </motion.div>
@@ -115,7 +115,7 @@ export function NoParking() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.6 }}
-          className="text-center font-hand text-ink/50 text-lg mt-12"
+          className="text-center font-hand text-ink/70 text-lg mt-12"
         >
           collection ongoing. more signs may be encountered.
         </motion.p>

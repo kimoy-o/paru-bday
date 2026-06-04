@@ -16,9 +16,9 @@ export default function Home() {
       <StickerLayer />
       <StarLayer />
       <Hero />
+      <JokeFiles />
       <TheGenius />
       <NoParking />
-      <JokeFiles />
       <TheTapes />
       <FieldDispatches />
       <ProfessionalNetworking />

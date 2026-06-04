@@ -107,13 +107,13 @@ export function JokeFiles() {
           className="mb-16"
         >
           <p className="font-hand text-chili text-xl tracking-[0.3em] mb-1">
-            act ii
+            act i
           </p>
           <h2
             className="font-hand font-bold text-ink leading-none"
             style={{ fontSize: "clamp(2.8rem, 7vw, 5.5rem)" }}
           >
-            the joke files.
+            the paru files.
           </h2>
           <DoodleUnderline className="text-honey mt-1 w-72" />
           <p className="font-hand text-xl text-ink/50 mt-3">

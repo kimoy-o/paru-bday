@@ -111,7 +111,7 @@ export function ProfessionalNetworking() {
             she was simply expanding her professional network.
             <br />
             <span className="text-lg text-ink/55">
-              (via arike. which is a dating app. she sent me these herself.)
+              (via arike. which is a dating app)
             </span>
           </p>
         </motion.div>

@@ -18,23 +18,23 @@ const riviera = [
 ];
 
 const generalPhotos = [
-  { file: "20260225_162508.jpg", caption: null, rotate: -2 },
-  { file: "IMG-20251127-WA0009.jpg", caption: null, rotate: 3 },
-  { file: "IMG-20251127-WA0010.jpg", caption: null, rotate: -1 },
-  { file: "Snapchat-1156349251.jpg", caption: null, rotate: 2 },
-  { file: "WhatsApp Image 2026-06-03 at 14.07.11.jpeg", caption: null, rotate: -3 },
-  { file: "WhatsApp Image 2026-06-03 at 14.07.11 (1).jpeg", caption: null, rotate: 1 },
-  { file: "WhatsApp Image 2026-06-03 at 14.07.13.jpeg", caption: null, rotate: -2 },
-  { file: "WhatsApp Image 2026-06-03 at 14.07.14.jpeg", caption: null, rotate: 3 },
-  { file: "WhatsApp Image 2026-06-03 at 14.07.15.jpeg", caption: null, rotate: -1 },
-  { file: "WhatsApp Image 2026-06-03 at 14.07.20.jpeg", caption: null, rotate: 2 },
-  { file: "WhatsApp Image 2026-06-03 at 14.07.21.jpeg", caption: null, rotate: -3 },
-  { file: "WhatsApp Image 2026-06-03 at 14.07.26.jpeg", caption: null, rotate: 1 },
-  { file: "WhatsApp Image 2026-06-03 at 14.07.34.jpeg", caption: null, rotate: -2 },
-  { file: "WhatsApp Image 2026-06-03 at 14.07.34 (1).jpeg", caption: null, rotate: 3 },
+  { file: "20260225_162508.jpg", caption: "niki laudaaaaa", rotate: -2 },
+  { file: "IMG-20251127-WA0009.jpg", caption: "vogue called", rotate: 3 },
+  { file: "IMG-20251127-WA0010.jpg", caption: "they called again", rotate: -1 },
+  { file: "Snapchat-1156349251.jpg", caption: "forehead act i", rotate: 2 },
+  { file: "WhatsApp Image 2026-06-03 at 14.07.11.jpeg", caption: "MOOSCKELES", rotate: -3 },
+  { file: "WhatsApp Image 2026-06-03 at 14.07.11 (1).jpeg", caption: "farewell i", rotate: 1 },
+  { file: "WhatsApp Image 2026-06-03 at 14.07.13.jpeg", caption: "farewell ii", rotate: -2 },
+  { file: "WhatsApp Image 2026-06-03 at 14.07.14.jpeg", caption: "sting? tsk tsk tsk", rotate: 3 },
+  { file: "WhatsApp Image 2026-06-03 at 14.07.15.jpeg", caption: "sexy glasses", rotate: -1 },
+  { file: "WhatsApp Image 2026-06-03 at 14.07.20.jpeg", caption: "onam വട യക്ഷി", rotate: 2 },
+  { file: "WhatsApp Image 2026-06-03 at 14.07.21.jpeg", caption: "one wholesome picture", rotate: -3 },
+  { file: "WhatsApp Image 2026-06-03 at 14.07.26.jpeg", caption: "best friend amma biriyani", rotate: 1 },
+  { file: "WhatsApp Image 2026-06-03 at 14.07.34.jpeg", caption: "ചുക്കു കാപ്പി", rotate: -2 },
+  { file: "WhatsApp Image 2026-06-03 at 14.07.34 (1).jpeg", caption: "elephant? addressed.", rotate: 3 },
   { file: "WhatsApp Image 2026-06-03 at 14.07.36.jpeg", caption: null, rotate: -1 },
-  { file: "WhatsApp Image 2026-06-03 at 14.07.36 (1).jpeg", caption: null, rotate: 2 },
-  { file: "WhatsApp Image 2026-06-03 at 14.07.37.jpeg", caption: null, rotate: -3 },
+  { file: "WhatsApp Image 2026-06-03 at 14.07.36 (1).jpeg", caption: "absolute retards", rotate: 2 },
+  { file: "WhatsApp Image 2026-06-03 at 14.07.37.jpeg", caption: "മിഖായേൽ jackson", rotate: -3 },
 ];
 
 const accents = ["#ffd166", "#f4a261", "#e63946"];
@@ -165,6 +165,7 @@ export function Gallery() {
             >
               <PhotoCard
                 src={r("photos", p.file)}
+                caption={p.caption ?? undefined}
                 rotate={p.rotate}
                 accent={accents[i % 3]}
                 imgHeight={155}
