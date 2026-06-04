@@ -85,7 +85,7 @@ export function NoParking() {
         </svg>
 
         {/* Gallery grid */}
-        <div className="flex flex-wrap gap-10 justify-center mt-8">
+        <div className="flex flex-wrap gap-10 justify-center mt-8 mx-auto" style={{ maxWidth: 720 }}>
           {exhibits.map((exhibit, i) => (
             <motion.div
               key={exhibit.file}
