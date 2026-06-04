@@ -32,7 +32,7 @@ const generalPhotos = [
   { file: "WhatsApp Image 2026-06-03 at 14.07.26.jpeg", caption: "best friend amma biriyani", rotate: 1 },
   { file: "WhatsApp Image 2026-06-03 at 14.07.34.jpeg", caption: "ചുക്കു കാപ്പി", rotate: -2 },
   { file: "WhatsApp Image 2026-06-03 at 14.07.34 (1).jpeg", caption: "elephant? addressed.", rotate: 3 },
-  { file: "WhatsApp Image 2026-06-03 at 14.07.36.jpeg", caption: null, rotate: -1 },
+  { file: "WhatsApp Image 2026-06-03 at 14.07.36.jpeg", caption: "feet", rotate: -1 },
   { file: "WhatsApp Image 2026-06-03 at 14.07.36 (1).jpeg", caption: "absolute retards", rotate: 2 },
   { file: "WhatsApp Image 2026-06-03 at 14.07.37.jpeg", caption: "മിഖായേൽ jackson", rotate: -3 },
 ];
